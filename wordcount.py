@@ -1,24 +1,28 @@
-
-
-#def read_file(filename):
+# Opens file assigns words to list.
+def read_file(filename):
     
-#    d = {}
+    word = []
 
-f = open('short.txt')
-for line in f:
-    word = line.strip().split()
-    #length = len(word)
-    #d[word] = length
-print word
+    f = open(filename)
+    for line in f:
+        entry = line.strip().split(' ')
+        word.extend(entry)
+    print word
 
-#def print_word(story):
-#    pass
+#Count the letters in each word in our word list.
+def letter_count():
+    pass
 
+# Assign word list and letter count list to a dictionary.
+def dictionary():
+    pass
 
-#def main():
-#    story = read_file('short.txt')
-#    print_word(story)
+# Prints dictionary of words and the letter count.
+def print_dictionary(story):
+    pass    
 
+def main():
+    read_file('short.txt')
 
-#if __name__ == "__main__":
-#    main()
+if __name__ == "__main__":
+    main()
